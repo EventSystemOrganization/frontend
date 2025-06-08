@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer>
-      <div>
-        <div> Copyright © 2025 Peterdraw </div>
-        <div> Privacy Policy</div>
-        <div> Terms and Conditions</div>
-        <div> Contact</div>
+    <footer className="footer">
+      <div className="footer-container">
+        <p>© 2025 Peterdraw</p>
+        <nav className="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Contact</a>
+        </nav>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

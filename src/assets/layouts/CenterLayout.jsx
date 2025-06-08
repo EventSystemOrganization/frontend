@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 const CenterLayout = () => {
   return (
-    <div class="center-wrapper">
-        <main>
-            <Outlet />
-        </main>
+    <div className="center-wrapper">
+      <main>
+        <Outlet />
+      </main>
     </div>
-  )
-}
+  );
+};
 
-export default CenterLayout
+export default CenterLayout;
